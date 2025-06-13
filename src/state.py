@@ -123,7 +123,7 @@ class State:
                     map.tilesets_in_use.append(tileset.tileset_key)
 
         # Assign first GIDs to tilesets in use
-        gid_counter = 0
+        gid_counter = 1
         for tileset_key in map.tilesets_in_use:
             map.first_gids[tileset_key] = gid_counter
             gid_counter += self.tileset_tile_count[tileset_key]
